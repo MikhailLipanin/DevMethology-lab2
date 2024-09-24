@@ -9,21 +9,15 @@ import (
 )
 
 const (
-	gameQuestion       = "Find the smallest common multiple of given numbers."
+	gameLcmRules       = "Find the smallest common multiple of given numbers."
 	lowIntervalOfNums  = 1
 	highIntervalOfNums = 100
 )
 
-type resultType int
-
-func (r resultType) String() string {
-	return fmt.Sprintf("%d", r)
-}
-
 type LcmGame struct {
 	data           []int
 	cntOfNums      int
-	expectedResult resultType
+	expectedResult singleValResultType
 }
 
 func NewLcmGame(cntOfNums int) *LcmGame {
@@ -33,7 +27,7 @@ func NewLcmGame(cntOfNums int) *LcmGame {
 }
 
 func (l *LcmGame) PrintGameRules() {
-	fmt.Println(gameQuestion)
+	fmt.Println(gameLcmRules)
 }
 
 func (l *LcmGame) ProcessNewRound() {
@@ -62,12 +56,12 @@ func (l *LcmGame) CompareResult(result string) bool {
 	return true
 }
 
-func (l *LcmGame) parseResult(result string) (resultType, error) {
+func (l *LcmGame) parseResult(result string) (singleValResultType, error) {
 	val, err := strconv.Atoi(result)
 	if err != nil {
 		return 0, err
 	}
-	return resultType(val), nil
+	return singleValResultType(val), nil
 }
 
 func (l *LcmGame) generateQuestionData() []int {
@@ -78,6 +72,6 @@ func (l *LcmGame) generateQuestionData() []int {
 	return res
 }
 
-func (l *LcmGame) evaluateResult() resultType {
-	return resultType(math.LcmOfArray(l.data))
+func (l *LcmGame) evaluateResult() singleValResultType {
+	return singleValResultType(math.LcmOfArray(l.data))
 }

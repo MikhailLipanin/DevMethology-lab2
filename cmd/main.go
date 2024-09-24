@@ -21,7 +21,7 @@ func main() {
 	case "lcm":
 		gameProvider = games.NewLcmGame(3)
 	case "geom-progression":
-
+		gameProvider = games.NewGeomProgression()
 	default:
 		fmt.Println("Wrong game mode! Specify the game mode: 'lcm' or 'geom-progression'")
 		os.Exit(1)
