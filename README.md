@@ -2,6 +2,11 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/1f938690e3c251cd5f79/maintainability)](https://codeclimate.com/github/MikhailLipanin/DevMethology-lab2/maintainability)
 
+## Overview
+
+![demo](https://github.com/user-attachments/assets/251f5522-7835-44f1-8b7c-25e9a39e5d5a)
+
+
 ## Usage
 
 Склонируйте себе проект:
