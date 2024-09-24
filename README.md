@@ -4,8 +4,17 @@
 
 ## Usage
 
-Для того чтобы запустить игру, воспользуйтесь Makefile .phony:
+Склонируйте себе проект:
+```bash
+https://github.com/MikhailLipanin/DevMethology-lab2.git
+```
 
+Для того чтобы запустить игру, воспользуйтесь бинарником в директории [bin/](./bin):
+```bash
+./bin/app --mode geom-progression
+```
+
+Для того, чтобы запустить код с исходников, воспользуйтесь Makefile .phony:
 - Игра "НОК":
 ```bash
 make lcm

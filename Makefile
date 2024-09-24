@@ -1,3 +1,6 @@
+build:
+	go build -o ./bin/app ./cmd/main.go
+
 lint:
 	golangci-lint run -v --config=.golangci.yaml
 

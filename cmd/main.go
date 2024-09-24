@@ -1,11 +1,12 @@
 package main
 
 import (
-	"DevMethology-lab2/internal"
-	"DevMethology-lab2/internal/games"
 	"flag"
 	"fmt"
 	"os"
+
+	"github.com/MikhailLipanin/DevMethology-lab2/internal"
+	"github.com/MikhailLipanin/DevMethology-lab2/internal/games"
 )
 
 var (

@@ -1,10 +1,11 @@
 package internal
 
 import (
-	"DevMethology-lab2/internal/games"
 	"bufio"
 	"fmt"
 	"os"
+
+	"github.com/MikhailLipanin/DevMethology-lab2/internal/games"
 )
 
 const (

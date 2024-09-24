@@ -1,11 +1,12 @@
 package games
 
 import (
-	"DevMethology-lab2/pkg/math"
-	"DevMethology-lab2/pkg/rand"
-	"DevMethology-lab2/pkg/slices"
 	"fmt"
 	"strconv"
+
+	"github.com/MikhailLipanin/DevMethology-lab2/pkg/math"
+	"github.com/MikhailLipanin/DevMethology-lab2/pkg/rand"
+	"github.com/MikhailLipanin/DevMethology-lab2/pkg/slices"
 )
 
 const (
